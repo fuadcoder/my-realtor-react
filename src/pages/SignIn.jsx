@@ -3,6 +3,7 @@ import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import OAuth from "../components/OAuth";
 
+
 export default function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
@@ -20,6 +21,7 @@ export default function SignIn() {
   function onClick() {
     setShowPassword((prevState) => !prevState);
   }
+
   return (
     <section>
       <h1 className="text-center text-3xl mt-6 font-bold">Sign In</h1>
