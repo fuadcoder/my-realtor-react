@@ -24,10 +24,6 @@ export default function SignUp() {
     }));
   }
 
-  function onClick() {
-    setShowPassword((prevState) => !prevState);
-  }
-
   async function onSubmit(e) {
     e.preventDefault();
 
@@ -93,12 +89,12 @@ export default function SignUp() {
               {showPassword ? (
                 <AiFillEyeInvisible
                   className="absolute right-3 top-3 text-xl cursor-pointer"
-                  onClick={onClick}
+                  onClick={() => setShowPassword((prevState) => !prevState)}
                 />
               ) : (
                 <AiFillEye
                   className="absolute right-3 top-3 text-xl cursor-pointer"
-                  onClick={onClick}
+                  onClick={() => setShowPassword((prevState) => !prevState)}
                 />
               )}
             </div>
