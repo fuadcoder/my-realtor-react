@@ -132,7 +132,7 @@ export default function Footer() {
         </div>
 
       </div>
-      <p className="footer__copy text-center">© <a href="/" className="hover:text-red-500 transition-colors duration-300">Fuad</a> All rights reserved.</p>
+      <p className="mt-4 text-center">© <a href="/" className="hover:text-red-500 transition-colors duration-300">Fuad</a> All rights reserved.</p>
     </footer>
   );
 }
