@@ -11,6 +11,7 @@ import {
 import { db } from "../firebase";
 import { Link } from "react-router-dom";
 import ListingItem from "../components/ListingItem";
+import Footer from "../components/Footer";
 
 export default function Home() {
   //Offers
@@ -169,6 +170,7 @@ export default function Home() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 }
